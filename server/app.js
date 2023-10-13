@@ -6,9 +6,10 @@ const app = express();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
 
+const apiKey='';
 var city='delhi';
 app.get("/getData",function(req,res){
-    var url="https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=38539afe8f80b28ccbc5af5ec21c9f06&units=metric";
+    var url="https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+apiKey+"&units=metric";
     https.get(url,function(Response){
         Response.on('data',function(data){
             res.json([JSON.parse(data)]);  
