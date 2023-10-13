@@ -1,0 +1,26 @@
+#footer{
+    text-align: center;
+    background-color: black;
+    padding:5% 0 3%;
+    color:white;
+}
+#header{
+    padding:3% 0 2%;
+    background-color:black;
+    color:white;
+}
+#sidebar{
+    width:20%;
+    height: 100%;
+    float:left;
+    padding: 2%;
+    background-color:white;
+
+}
+#data{
+    padding: 3%;
+    padding-left:20%;
+    background-color:white;
+
+    padding-top:5%;
+}
